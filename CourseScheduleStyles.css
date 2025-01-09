@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: #f3f4f6; /* Light gray for text */
+  background: linear-gradient(to right, #1e293b, #475569); /* Dark blue-gray tones */
+  padding-top: 60px;
+}
+
+header {
+  background: linear-gradient(to right, #111827, #374151); /* Dark gray gradient */
+  color: #f3f4f6; /* Light gray for text */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 2px solid #4b5563; /* Subtle border for separation */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+main {
+  padding: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.content-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.content-table thead {
+  background: #1f2937; /* Dark slate */
+  color: #f3f4f6; /* Light gray text */
+  text-transform: uppercase;
+}
+
+.content-table th,
+.content-table td {
+  padding: 14px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #374151; /* Medium dark gray */
+  color: #f3f4f6; /* Light text for better contrast */
+}
+
+.content-table tbody tr:nth-of-type(odd) {
+  background-color: #1e293b; /* Slightly darker */
+  color: #f3f4f6; /* Light text for better contrast */
+}
+
+.content-table tbody tr:hover {
+  background-color: #475569; /* Highlight row on hover */
+  color: #f3f4f6; /* Maintain text visibility on hover */
+}
+
+.content-table td.time {
+  font-weight: bold;
+  color: #f59e0b; 
+}
+
+.content-table td:not(.time):not(:empty) {
+  color: #ffffff; 
+  font-weight: bold;
+}
